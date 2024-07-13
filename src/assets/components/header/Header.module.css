@@ -1,0 +1,59 @@
+header {
+    max-height: 5.333rem;
+    box-shadow: 
+    0 4px 8px #26323814,
+    0 2px 4px #26323829 ;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav,.logo, ul {
+    display: flex;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 2.7rem;
+    align-items: center;
+}
+
+ul {
+    gap: 2.4rem;
+}
+
+li a{
+    line-height: 2.2rem;
+}
+
+li {
+    font-weight: 400;
+    color: var(--button-color)
+}
+
+li:hover{
+    font-weight: 700;
+    color: var(--main-color);
+    transition: .5s;
+}
+
+li:not(:first-child)::before{
+    content: "\2022"; 
+    display: inline-block;
+    width: 1em;
+    color: var(--action-color); 
+    font-weight: bold;
+    margin-left: -1.4em;
+}
+
+button {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--second-color);
+    background-color: var(--button-color);
+    border-radius: 999px;
+    padding: 12px 24px;
+    line-height: 2rem;
+}
